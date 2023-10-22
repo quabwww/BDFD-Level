@@ -1,0 +1,21 @@
+Personaliza donde quieres que se manden los mensaje de leveleo por default devuelven channelID.
+
+
+Prefix: !level-channel
+
+Codigo:
+$nomention
+$jsonParse[$getServerVar[ajustes;$guildID]]
+$var[ca;$findChannel[$message]]
+
+$if[$message==]
+:x: Ningun argumento obtnido.
+$stop
+
+$elseif[$channelExists[$var[ca]]==false]
+:x: El canal no existe prueb de nuevo con: mencion, ID, nombre.
+$stop
+$endif
+:white_check_mark: Canal establecido en <#$var[ca]> corectamente (true).
+$jsonSetString[canal-message;$var[ca]]
+$setServerVar[ajustes;$jsonStringify;$guildID]
