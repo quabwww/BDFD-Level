@@ -15,4 +15,7 @@ Comenzando crea las variables Necarias.
 
 
 Este codigo esta hecho por servidor [The BDS Word](https://discord.gg/QXTy2QPB5r)
-- Administradores:
+
+## Administradores:
+- xquab
+- izana.py
