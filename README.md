@@ -5,3 +5,6 @@
 | xp        | 0         |
 | req       | Amarillo  |
 | level     | Morada    |
+| rolepre   |           |
+| rewards   | {}        |
+| ajustes   | {}        |
