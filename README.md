@@ -21,9 +21,9 @@ Comenzando crea las variables Necarias.
 - izana.py
 
 
-## [Resultados]():
+## Resultados:
 
-**Rank Card**
+**[Rank Card](https://github.com/quabwww/BDFD-Level/commit/ccdbbd818955e0d899dc3426528ccaacbf6efa39)**
 
 ![Rank Card](https://github.com/quabwww/BDFD-Level/assets/148601206/e7471aaa-8c15-4960-8546-e51e7ddb0482)
 
