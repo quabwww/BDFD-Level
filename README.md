@@ -19,3 +19,9 @@ Comenzando crea las variables Necarias.
 ### Administradores:
 - xquab
 - izana.py
+
+
+**Resultados:**
+
+![Rank Card](https://github.com/quabwww/BDFD-Level/assets/148601206/e7471aaa-8c15-4960-8546-e51e7ddb0482)
+
