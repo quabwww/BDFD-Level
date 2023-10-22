@@ -1,0 +1,55 @@
+$nomention
+$onlyForUsers[xquab;Regreso mas tarde para arrgelar este code, no tocar]
+
+$jsonParse[$getServerVar[rewards;$guildID]]
+$allowRoleMentions[]
+$thumbnail[$serverIcon]
+
+$title[Reconpensas]
+$embeddedURL[$getServerInvite]
+$description[
+```
+Premium: 40% ⬆️
+Server Booster 50% ⬆️⬆️
+```]
+$addField[Nivel 1:;
+
+$if[$json[level1]==]Nada registrado$else<@&$json[level1]> ID: `$json[level1]`$endif
+
+**Nivel 2:**
+
+$if[$json[level2]==]Nada registrado$else<@&$json[level2]> ID: `$json[level2]`$endif
+
+**Nivel 3:**
+
+$if[$json[level3]==]Nada registrado$else<@&$json[level3]> ID: `$json[level3]`$endif
+
+**Nivel 4:**
+
+$if[$json[level4]==]Nada registrado$else<@&$json[level4]> ID: `$json[level4]`$endif
+
+**Nivel 5:**
+
+$if[$json[level5]==]Nada registrado$else<@&$json[level5]> ID: `$json[level5]`$endif
+;true]
+$addField[Level 6:;
+
+$if[$json[level6]==]Nada registrado$else<@&$json[level6]> ID: `$json[level6]`$endif
+
+**Nivel 7:**
+
+$if[$json[level7]==]Nada registrado$else<@&$json[level7]> ID: `$json[level7]`$endif
+
+**Nivel 8:**
+
+$if[$json[level8]==]Nada registrado$else<@&$json[level8]> ID: `$json[level8]`$endif
+
+**Nivel 9:**
+
+$if[$json[level9]==]Nada registrado$else<@&$json[level9]> ID: `$json[level9]`$endif
+
+**Nivel 10:**
+
+$if[$json[level10]==]Nada registrado$else<@&$json[level10]> ID: `$json[level10]`$endif
+;true]
+$color[$random[0;999999]]
