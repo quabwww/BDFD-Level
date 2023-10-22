@@ -12,3 +12,8 @@ $sendMessage[
 Te hace falta **$replaceText[$sub[$getUserVar[xp;$var[user]];$getUserVar[req;$var[user]]];-;]XP** Para subir de nivel.]
 $sendMessage[https://agg-api.vercel.app/levelup?avatar=$url[encode;$userAvatar[$var[user]]]&border=ffffff&level=$url[encode;$getUserVar[level;$var[user]]]]
 ```
+
+```python
+def saludar():
+print("Hola, mundo")
+```
