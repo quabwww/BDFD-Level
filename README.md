@@ -14,7 +14,7 @@ Comenzando crea las variables Necarias.
 | ajustes   | {}        |
 
 
-Este codigo esta hecho por servidor [The BDS Word](https://discord.gg/QXTy2QPB5r)
+¡Este codigo esta hecho por el servidor [The BDS Word](https://discord.gg/QXTy2QPB5r)!
 
 ### Administradores:
 - xquab
