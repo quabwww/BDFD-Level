@@ -1,0 +1,30 @@
+Personaliza el mensaje cuando alguien suba de nivel
+
+Tag disponibles: 
+{level}, {authorID}, {mention}, {username}, {discriminator}
+Nota: {level} Requerido.
+
+Prefix: !level-message 
+
+Codigo:
+
+$nomention
+$jsonParse[$getServerVar[ajustes;$guildID]]
+$if[$message==]
+:x: Ningun argumento obtenido.
+$stop
+$endif
+$if[$message==tags]
+$color[$random[0;999999]]
+$description[TAGS:
+
+```{level}, {authorID}, {mention}, {username}, {discriminator}```]
+$stop
+
+$elseif[$checkContains[$message;{level}]==false]
+:x: Por favor usa almenos el tag `{level}`.
+$stop$endif
+
+✅️ Se guardaron los cambios
+$jsonSetString[mensaje;$message]
+$setServerVar[ajustes;$jsonStringify;$guildID]
