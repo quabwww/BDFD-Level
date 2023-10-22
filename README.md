@@ -16,12 +16,13 @@ Comenzando crea las variables Necarias.
 
 ¡Este codigo esta hecho por el servidor [The BDS Word](https://discord.gg/QXTy2QPB5r)!
 
-### Administradores:
+## Administradores:
 - xquab
 - izana.py
 
 
 **Resultados:**
 
+## Rank Card 
 ![Rank Card](https://github.com/quabwww/BDFD-Level/assets/148601206/e7471aaa-8c15-4960-8546-e51e7ddb0482)
 
