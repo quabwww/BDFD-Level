@@ -1,1 +1,14 @@
-w
+**Importante**
+El prefix puede ser asu gusto nadamas por estilo le ponemos !rank.
+
+
+Prefix: !rank
+
+Codigo:
+```
+$var[user;$findUser[$message]]
+$sendMessage[
+> **Rank card [** $username[$var[user]] **\]** | Nivel **$getUserVar[level;$var[user]]** | XP `$getUserVar[xp;$var[user]]`/`$getUserVar[req;$var[user]]`
+Te hace falta **$replaceText[$sub[$getUserVar[xp;$var[user]];$getUserVar[req;$var[user]]];-;]XP** Para subir de nivel.]
+$sendMessage[https://agg-api.vercel.app/levelup?avatar=$url[encode;$userAvatar[$var[user]]]&border=ffffff&level=$url[encode;$getUserVar[level;$var[user]]]]
+```
