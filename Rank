@@ -5,7 +5,7 @@ El prefix puede ser asu gusto nadamas por estilo le ponemos !rank.
 Prefix: !rank
 
 Codigo:
-```
+```js
 $var[user;$findUser[$message]]
 $sendMessage[
 > **Rank card [** $username[$var[user]] **\]** | Nivel **$getUserVar[level;$var[user]]** | XP `$getUserVar[xp;$var[user]]`/`$getUserVar[req;$var[user]]`
