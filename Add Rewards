@@ -1,0 +1,77 @@
+Agrega reconpensas(roles) maximo hasta 10 niveles.
+
+
+Prefix: !add-rewards
+
+Codigo
+
+$nomention
+$if[$checkUserPerms[$authorID;admin]==false]
+:x: No tienes admin
+$stop
+$endif
+
+$jsonParse[$getServerVar[rewards;$guildID]]
+$var[roleval;$findRole[$message[2]]]
+$if[$isNumber[$message[1]]==false]
+:x: Por favor selecciona un level valido (maximo hasta 10).
+$stop
+$elseif[$roleExists[$var[roleval]]==false]
+:x: Ese rol existe prueba con otro.
+$stop
+$elseif[$and[$isNumber[$message[1]]==true;$message[1]>10]==true]
+:x: No puedes agregar mas 10 niveles en reconpensas lo siento.
+$stop
+$endif
+
+
+$if[$message[1]==1]
+$jsonSetString[level1;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (1).
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==2]
+$jsonSetString[level2;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (2).
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==3]
+$jsonSetString[level3;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (3
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==4]
+$jsonSetString[level4;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (4)
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==5]
+$jsonSetString[level5;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (5)
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==6]
+$jsonSetString[level6;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (6)
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==7]
+$jsonSetString[level7;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (7)
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==8]
+$jsonSetString[level8;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (8)
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==9]
+$jsonSetString[level9;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con éxito al level (9).
+$setServerVar[rewards;$jsonStringify;$guildID]
+
+$elseif[$message[1]==10]
+$jsonSetString[level10;$var[roleval]]
+:star: Se agrego <@&$var[roleval]> con exito al level (10).
+$setServerVar[rewards;$jsonStringify;$guildID]
+$endif
