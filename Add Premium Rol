@@ -1,0 +1,22 @@
+Elige el rol premium, esto dara un 40% mas bonificacion en XP
+
+Prefix: !add-premium
+
+Codigo:
+
+$var[id;$findRole[$message]]
+$if[$message==]
+:x: Ningun argumento obtenido
+$stop
+$elseif[$roleExists[$var[id]]==false]
+:x: El rol no existe prueba de nuevo.
+$stop
+$elseif[$checkUserPerms[$authorID;admin]==false]
+:x: No tienes adminstrador para hacer esto
+$stop
+$elseif[$checkUserPerms[$botID;admin]==false]
+Por favor dame administrador
+$stop
+$endif
+:white_check_mark: Perfecto se establecio el rol premium
+$setServerVar[role-pre;$var[id];$guildID]
