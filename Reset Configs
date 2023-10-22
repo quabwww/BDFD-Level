@@ -1,0 +1,32 @@
+Resetea todo lo configurado segun una caracteristica de las funciones
+
+Prefix: !reset
+
+
+Codigo:
+$nomention
+$if[$message==all]
+ :white_check_mark: Se reseteo todo: correctamente XP/Level de todos los usuarios y Canales/Ajustes(mensajes).
+$resetUserVar[xp]
+$resetUserVar[req]
+$resetUserVar[level]
+$resetServerVar[rewards]
+$resetServerVar[ajustes]
+
+$elseif[$message==rewards]
+:white_check_mark:  Se resetearon las reconpensas
+$resetServerVar[rewards]
+$elseif[$message==settings]
+:white_check_mark: Se reseteo el texto de leveleo y el canal.
+$resetServerVar[ajustes]
+$elseif[$message==premium]
+:white_check_mark: Se reseteo el rol premium (bonus: 40%)
+$resetServerVar[role-pre]
+
+$else
+Opciones disponibles:
+```
+all, settings, premium, rewards
+```
+$stop
+$endif
