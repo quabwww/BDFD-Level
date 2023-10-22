@@ -12,3 +12,5 @@ $sendMessage[
 Te hace falta **$replaceText[$sub[$getUserVar[xp;$var[user]];$getUserVar[req;$var[user]]];-;]XP** Para subir de nivel.]
 $sendMessage[https://agg-api.vercel.app/levelup?avatar=$url[encode;$userAvatar[$var[user]]]&border=ffffff&level=$url[encode;$getUserVar[level;$var[user]]]]
 
+![Link](https://cdn.discordapp.com/attachments/1163223411997290527/1165677064188346472/image.png?ex=6547b85d&is=6535435d&hm=92b0d89b1e9f9551c4bfe216d11dc6d3f4e1c209d68319e1907e0885e57b0b89&)
+
