@@ -7,8 +7,8 @@ Comenzando crea las variables Necarias.
 | Variable  | Valor     | 
 | --------- | --------- | 
 | xp        | 0         |
-| req       | Amarillo  |
-| level     | Morada    |
+| req       | 50        |
+| level     | 0         |
 | rolepre   |           |
 | rewards   | {}        |
 | ajustes   | {}        |
