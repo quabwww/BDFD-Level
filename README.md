@@ -9,7 +9,7 @@ Comenzando crea las variables necesarias.
 | xp        | 0         |
 | req       | 50        |
 | level     | 0         |
-| rolepre   |           |
+| role-pre   |           |
 | rewards   | {}        |
 | ajustes   | {}        |
 
