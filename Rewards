@@ -1,5 +1,9 @@
+Prefix: !rewards
+
+
+Codigo:
+
 $nomention
-$onlyForUsers[xquab;Regreso mas tarde para arrgelar este code, no tocar]
 
 $jsonParse[$getServerVar[rewards;$guildID]]
 $allowRoleMentions[]
