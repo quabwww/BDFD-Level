@@ -7,7 +7,7 @@ Prefix: !rank
 Codigo:
 
 $var[user;$findUser[$message]]
-$var[hex;$url[encode;000001]]
+$var[hex;$url[encode;#000001]]
 
 
 $sendMessage[
